@@ -1,0 +1,22 @@
+body {
+  background-color: #372147;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#top {
+  grid-column: 1 / 6;
+  color: aliceblue;
+  padding: 8px;
+  text-align: center;
+  border-bottom: yellow solid 1px;
+}
+
+#left {
+  grid-column: 1 / 2;
+
+  /* grid-area: 2 / 2 / 5 / 6; */
+
+  background-color: yellow;
+}
