@@ -1,94 +1,25 @@
-/* body {
-  --purple: #372147;
-  background-color: var(--purple);
-  align-items: flex-start;
-  min-height: 100vh;
-}
 :root {
+  --purple: #372147;
   --yellow: #e4bd59;
   --light-purple: #b985ee;
-  font-family: "Inter";
 }
-
-#title {
-  color: var(--yellow);
-  padding: 8px;
-  font-size: 32px;
-  font-weight: 300;
-
-  text-align: center;
-  border-bottom: var(--yellow) solid 1px;
-}
-#container {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-}
-
-#menu {
-  height: 100vh;
-  min-width: 150px;
-  max-width: 100px;
-  padding: 8px;
-  text-align: center;
-
-  color: var(--purple);
-  background-color: var(--yellow);
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-  border: solid;
-}
-
-#text_container {
-  font-size: 64px;
-  width: 100vw;
-  align-self: center;
-  text-align: center;
-  background-color: lightcyan;
-  color: var(--light-purple);
-}
-
-#text {
-  border: #b985ee solid;
-} */
 
 body {
-  --purple: #372147;
-  background-color: var(--purple);
-  align-items: flex-start;
-  min-height: 100vh;
-}
-:root {
-  --yellow: #e4bd59;
-  --light-purple: #b985ee;
-  font-family: "Inter";
-}
-
-#title {
-  color: var(--yellow);
-  padding: 8px;
-  font-size: 32px;
-  font-weight: 300;
-
-  text-align: center;
-  border-bottom: var(--yellow) solid 1px;
-}
-#container {
-  height: 100vh;
   display: flex;
-  flex-direction: row;
+  min-height: 100vh;
+  background-color: var(--purple);
+  font-family: "Inter", sans-serif;
 }
 
 #menu {
-  height: 100vh;
-  min-width: 150px;
-  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  width: 15%;
+  min-width: 100px;
   padding: 8px;
   text-align: center;
-
   color: var(--purple);
   background-color: var(--yellow);
 }
@@ -96,18 +27,31 @@ body {
 ul {
   display: flex;
   flex-direction: column;
-  border: solid;
 }
 
-#text_container {
-  font-size: 64px;
-  width: 100vw;
-  align-self: center;
+#container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: lightcyan;
-  color: var(--light-purple);
+  width: 100vw;
+  justify-content: center;
+}
+#title {
+  color: var(--yellow);
+  padding: 8px;
+  font-size: 32px;
+  font-weight: 300;
+
+  border-bottom: var(--yellow) solid 1px;
 }
 
 #text {
-  border: #b985ee solid;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+
+  font-size: 16px;
+  color: var(--light-purple);
 }
