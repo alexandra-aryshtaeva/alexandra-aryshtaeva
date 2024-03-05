@@ -1,22 +1,113 @@
-body {
-  background-color: #372147;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+/* body {
+  --purple: #372147;
+  background-color: var(--purple);
+  align-items: flex-start;
+  min-height: 100vh;
+}
+:root {
+  --yellow: #e4bd59;
+  --light-purple: #b985ee;
+  font-family: "Inter";
 }
 
-#top {
-  grid-column: 1 / 6;
-  color: aliceblue;
+#title {
+  color: var(--yellow);
+  padding: 8px;
+  font-size: 32px;
+  font-weight: 300;
+
+  text-align: center;
+  border-bottom: var(--yellow) solid 1px;
+}
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  height: 100vh;
+  min-width: 150px;
+  max-width: 100px;
   padding: 8px;
   text-align: center;
-  border-bottom: yellow solid 1px;
+
+  color: var(--purple);
+  background-color: var(--yellow);
 }
 
-#left {
-  grid-column: 1 / 2;
+ul {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+}
 
-  /* grid-area: 2 / 2 / 5 / 6; */
+#text_container {
+  font-size: 64px;
+  width: 100vw;
+  align-self: center;
+  text-align: center;
+  background-color: lightcyan;
+  color: var(--light-purple);
+}
 
-  background-color: yellow;
+#text {
+  border: #b985ee solid;
+} */
+
+body {
+  --purple: #372147;
+  background-color: var(--purple);
+  align-items: flex-start;
+  min-height: 100vh;
+}
+:root {
+  --yellow: #e4bd59;
+  --light-purple: #b985ee;
+  font-family: "Inter";
+}
+
+#title {
+  color: var(--yellow);
+  padding: 8px;
+  font-size: 32px;
+  font-weight: 300;
+
+  text-align: center;
+  border-bottom: var(--yellow) solid 1px;
+}
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  height: 100vh;
+  min-width: 150px;
+  max-width: 100px;
+  padding: 8px;
+  text-align: center;
+
+  color: var(--purple);
+  background-color: var(--yellow);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+}
+
+#text_container {
+  font-size: 64px;
+  width: 100vw;
+  align-self: center;
+  text-align: center;
+  background-color: lightcyan;
+  color: var(--light-purple);
+}
+
+#text {
+  border: #b985ee solid;
 }
